@@ -1,0 +1,88 @@
+@font-face {font-family: 'HK';src: url('bulevar-regular-webfont.63f39152.woff') format('woff');font-weight: 500;font-style: normal;font-display: swap;}
+
+*{ margin: 0% }
+
+body{ 
+  background-color:#000000 ;
+  color: #171717 ;
+  font-family: "HK",sans-serif ;
+  text-transform: uppercase ; 
+  overflow-x: hidden;
+  position: relative;
+  width: 100vw;
+  height: 100dvh;
+}
+
+header{
+  display: flex;
+  justify-content: space-around;
+  padding-block: 1rem;
+  background-color: white;
+  border-bottom: .05em solid #1c1b19;
+}
+
+header div{ display: flex; }
+
+header button{
+  font-family: "HK";
+  text-transform: uppercase;
+  text-decoration: none ;
+  background-color: transparent;
+  font-size: 1.6rem;
+  border: none;
+}
+
+input[type=number]{
+  margin-left: 0.5rem;
+  outline: none;
+  background-color: #1c1b19;
+  color: #d5cdc4;
+}
+
+header h2{ cursor: pointer;font-size: 1.6rem;font-weight: 100; }
+
+.array_container{
+  display: flex;
+  justify-content:center;
+  align-items:flex-start;
+  margin: 0.5rem;
+  color: #ffffff;
+}
+
+.array_elements{
+  text-align: center;
+  color: #141414;
+  background-color: #ffffff;
+  transition: all 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.rotate{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  color: #ffffff;
+  display: none;
+  text-align: center;
+}
+
+.rotate svg{
+  width: 2.5rem;
+  display: inline-block;
+  margin: 1rem;
+}
+
+.rotate h1{
+  font-weight: 100;
+  letter-spacing: .05em ;
+  white-space: nowrap;
+}
+
+@media (max-width:750px){
+  main{
+    display: none;
+  }
+  .rotate{
+    display: block;
+  }
+}
