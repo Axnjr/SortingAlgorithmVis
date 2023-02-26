@@ -33,7 +33,7 @@ export default function Header({ // props
                 <label><h2>Enter array length ( min : 5 | max : 50 ) : </h2></label> 
                 <input type="number" min={5} max={50} 	
                     onChange={(e)=>{
-                        if(e.target.value > 50 || e.target.value < 5){ 
+                        if(e.target.value > 50 || e.target.value < 0){ 
                             alert(`Please provide array greater than 5 and smaller than 50 , you entered ${e.target.value} .`)
                         }
                         setArrLen(e.target.value)
