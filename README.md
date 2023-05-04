@@ -1,4 +1,4 @@
-# Sorting lgorithm Visualizer
+# Sorting algorithm Visualizer
 ## Algorithms
 1. Bubble
 2. Quick
